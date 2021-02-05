@@ -1,5 +1,5 @@
-import React from 'react';
-import {Text, View, FlatList, StyleSheet, TouchableOpacity} from 'react-native';
+import React, {useEffect} from 'react';
+import {Text, View, FlatList, StyleSheet, TouchableOpacity, AsyncStorage} from 'react-native';
 
 interface Props {
   navigation: {
@@ -8,6 +8,7 @@ interface Props {
 }
 
 const Doctors: React.FC<Props> = ({navigation}) => {
+
   return (
     <>
       <FlatList
